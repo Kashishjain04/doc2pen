@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "./static/css/main.8c8b27cf.chunk.css",
-    "main.js": "./static/js/main.442f5676.chunk.js",
-    "main.js.map": "./static/js/main.442f5676.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.9c058ec9.js",
-    "runtime-main.js.map": "./static/js/runtime-main.9c058ec9.js.map",
-    "static/js/2.a7d37f7f.chunk.js": "./static/js/2.a7d37f7f.chunk.js",
-    "static/js/2.a7d37f7f.chunk.js.map": "./static/js/2.a7d37f7f.chunk.js.map",
-    "static/js/3.15104ec7.chunk.js": "./static/js/3.15104ec7.chunk.js",
-    "static/js/3.15104ec7.chunk.js.map": "./static/js/3.15104ec7.chunk.js.map",
+    "main.css": "./static/css/main.9f54542b.chunk.css",
+    "main.js": "./static/js/main.8f4ec019.chunk.js",
+    "main.js.map": "./static/js/main.8f4ec019.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.81f53d4a.js",
+    "runtime-main.js.map": "./static/js/runtime-main.81f53d4a.js.map",
+    "static/css/2.ae9f1eb3.chunk.css": "./static/css/2.ae9f1eb3.chunk.css",
+    "static/js/2.c0185389.chunk.js": "./static/js/2.c0185389.chunk.js",
+    "static/js/2.c0185389.chunk.js.map": "./static/js/2.c0185389.chunk.js.map",
+    "static/js/3.49b6342a.chunk.js": "./static/js/3.49b6342a.chunk.js",
+    "static/js/3.49b6342a.chunk.js.map": "./static/js/3.49b6342a.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "./static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.a7d37f7f.chunk.js.LICENSE.txt": "./static/js/2.a7d37f7f.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "./static/media/logo.6ce24c58.svg"
+    "static/css/2.ae9f1eb3.chunk.css.map": "./static/css/2.ae9f1eb3.chunk.css.map",
+    "static/css/main.9f54542b.chunk.css.map": "./static/css/main.9f54542b.chunk.css.map",
+    "static/js/2.c0185389.chunk.js.LICENSE.txt": "./static/js/2.c0185389.chunk.js.LICENSE.txt",
+    "static/media/index.css": "./static/media/Poppins-Regular.1421a94e.otf",
+    "static/media/blank1.069db253.png": "./static/media/blank1.069db253.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9c058ec9.js",
-    "static/js/2.a7d37f7f.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.442f5676.chunk.js"
+    "static/js/runtime-main.81f53d4a.js",
+    "static/css/2.ae9f1eb3.chunk.css",
+    "static/js/2.c0185389.chunk.js",
+    "static/css/main.9f54542b.chunk.css",
+    "static/js/main.8f4ec019.chunk.js"
   ]
 }
