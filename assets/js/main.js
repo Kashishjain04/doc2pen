@@ -42,7 +42,6 @@ bodyElement.append(footer);
 let navElement = $(`.nav-back`);
 navElement.append(header);
 
-
 //common side navbar call
 
 $(document).ready(function () {
@@ -102,7 +101,7 @@ const maintainerSection = [
     title: "Lead Developer",
     github: "https://github.com/smaranjitghose",
     linkedin: "https://www.linkedin.com/in/smaranjitghose/",
-    imgclass: "image-1"
+    imgclass: "image-1",
   },
   {
     image: "assets/images/team/anush_bhatia.png",
@@ -110,14 +109,14 @@ const maintainerSection = [
     title: "Lead Developer",
     github: "https://github.com/anushbhatia",
     linkedin: "https://www.linkedin.com/in/anushbhatia/",
-    imgclass: "image-2"
-  }
+    imgclass: "image-2",
+  },
 ];
 
 const maintainerInfo = () => {
   let output = "";
   maintainerSection.forEach(
-    ({ title, image, github, linkedin, name, imgclass}) =>
+    ({ title, image, github, linkedin, name, imgclass }) =>
       (output += `    
       <div class="${imgclass} col-md-6 centeralign">
       <div class="profile-container">
@@ -139,7 +138,6 @@ const maintainerInfo = () => {
   projMaintainers.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", maintainerInfo);
-
 
 const contributor = document.querySelector(".contributor");
 // Data for Contributors: name, profile picture, github url
@@ -267,7 +265,7 @@ const contributorsection = [
   {
     title: "Dipansh",
     image: "assets/images/contributors/24.jpg",
-    githublink: "https://github.com/dipanshparmar"
+    githublink: "https://github.com/dipanshparmar",
   },
 ];
 
@@ -290,46 +288,54 @@ document.addEventListener("DOMContentLoaded", showCards);
 /* Open source cards */
 
 const recentEventsDetails = [
-	{
-		coverImage: 'assets/images/events/SLOP.png',
-		eventName: 'SLOP',
-		altName: 'SLOP Logo',
-		eventDescription: `An inititative by the Developer Student Club (DA-IICT), exclusively for students who are new to open source software development.`,
-		referencePage: 'https://slop.dscdaiict.in/projects'
-	},
-	{
-		coverImage: 'assets/images/events/hakin_codes.png',
-		eventName: 'Hakincodes',
-		altName: 'Hakincodes Logo',
-		eventDescription: `Established in 2020 with a mission to empower youth i.e. students, developers & many more by giving opportunities to grow and learn.`,
-		referencePage: 'https://hakincodes.tech/'
-	},
-	{
-		coverImage: 'assets/images/events/psoc_logo.png',
-		eventName: 'PSOC',
-		altName: 'PSOC Logo',
-		eventDescription: `It's a 2 month long event conducted by Programming Club, UIET, aiming to help beginners get started with Open Source development.`,
-		referencePage: 'https://www.pclubsummerofcode.in/'
+  {
+    coverImage: "assets/images/events/SLOP.png",
+    eventName: "SLOP",
+    altName: "SLOP Logo",
+    eventDescription: `An inititative by the Developer Student Club (DA-IICT), exclusively for students who are new to open source software development.`,
+    referencePage: "https://slop.dscdaiict.in/projects",
   },
   {
-    coverImage: 'assets/images/events/woc-logo.png',
-    eventName:'DevScript Winter of Code 2020',
-    altName:'WOC Logo',
-    eventDescription: 'Winter of Code envisioned by DevScript that helps understand the paradigm of Open Source contribution.',
-    referencePage:'https://devscript.tech/woc/'
+    coverImage: "assets/images/events/hakin_codes.png",
+    eventName: "Hakincodes",
+    altName: "Hakincodes Logo",
+    eventDescription: `Established in 2020 with a mission to empower youth i.e. students, developers & many more by giving opportunities to grow and learn.`,
+    referencePage: "https://hakincodes.tech/",
   },
   {
-    coverImage: 'assets/images/events/SWOC-logo.png',
-    eventName:'Script Winter of Code 2021',
-    altName:'SWOC Logo',
-    eventDescription: 'Script Winter of Code envisioned by the Script Foundation aims to bring students into the world of open source development.',
-    referencePage:'https://swoc.tech/index.html'
-  }
+    coverImage: "assets/images/events/psoc_logo.png",
+    eventName: "PSOC",
+    altName: "PSOC Logo",
+    eventDescription: `It's a 2 month long event conducted by Programming Club, UIET, aiming to help beginners get started with Open Source development.`,
+    referencePage: "https://www.pclubsummerofcode.in/",
+  },
+  {
+    coverImage: "assets/images/events/woc-logo.png",
+    eventName: "DevScript Winter of Code 2020",
+    altName: "WOC Logo",
+    eventDescription:
+      "Winter of Code envisioned by DevScript that helps understand the paradigm of Open Source contribution.",
+    referencePage: "https://devscript.tech/woc/",
+  },
+  {
+    coverImage: "assets/images/events/SWOC-logo.png",
+    eventName: "Script Winter of Code 2021",
+    altName: "SWOC Logo",
+    eventDescription:
+      "Script Winter of Code envisioned by the Script Foundation aims to bring students into the world of open source development.",
+    referencePage: "https://swoc.tech/index.html",
+  },
 ];
 
 const generateEventsCard = (eventDetail, fixClassIndex) => {
-	const { coverImage, eventName, altName, eventDescription, referencePage } = eventDetail;
-	const eventCard = `<div class="card r-events-card">
+  const {
+    coverImage,
+    eventName,
+    altName,
+    eventDescription,
+    referencePage,
+  } = eventDetail;
+  const eventCard = `<div class="card r-events-card">
 						<div class="card-image">
 							<img
 								src="${coverImage}"
@@ -348,13 +354,13 @@ const generateEventsCard = (eventDetail, fixClassIndex) => {
 						</div>
 					</div>`;
 
-	const recentEventsSection = document.getElementById('eventCards');
-	recentEventsSection.innerHTML += eventCard;
+  const recentEventsSection = document.getElementById("eventCards");
+  recentEventsSection.innerHTML += eventCard;
 };
 
 const insertEventCards = () => {
-	recentEventsDetails.forEach((detail, index) => {
-		generateEventsCard(detail, index + 1);
-	});
+  recentEventsDetails.forEach((detail, index) => {
+    generateEventsCard(detail, index + 1);
+  });
 };
 insertEventCards();
